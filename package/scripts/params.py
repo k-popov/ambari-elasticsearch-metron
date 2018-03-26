@@ -47,6 +47,8 @@ hostname = config['hostname']
 java64_home = config['hostLevelParams']['java_home']
 elastic_env_sh_template = config['configurations']['elastic-env']['content']
 sysconfig_template = config['configurations']['elastic-sysconfig']['content']
+elastic_yum_repo_file = '/etc/yum.repos.d/elasticsearch.repo'
+elastic_yum_repo = config['configurations']['elastic-repo']['content']
 
 cluster_name = config['configurations']['elastic-site']['cluster_name']
 zen_discovery_ping_unicast_hosts = config['configurations']['elastic-site']['zen_discovery_ping_unicast_hosts']

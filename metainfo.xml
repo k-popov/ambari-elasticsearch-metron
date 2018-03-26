@@ -22,7 +22,7 @@
             <name>ELASTICSEARCH</name>
             <displayName>Elasticsearch</displayName>
             <comment>Indexing and Search</comment>
-            <version>5.6.2</version>
+            <version>6.2.3-custom</version>
             <components>
                 <component>
                     <name>ES_MASTER</name>
@@ -60,7 +60,7 @@
                     <osFamily>redhat7</osFamily>
                     <packages>
                         <package>
-                            <name>elasticsearch-5.6.2</name>
+                            <name>elasticsearch-6.2.3</name>
                         </package>
                     </packages>
                 </osSpecific>
@@ -80,6 +80,7 @@
             </commandScript>
             <configuration-dependencies>
                 <config-type>elastic-env</config-type>
+                <config-type>elastic-repo</config-type>
                 <config-type>elastic-site</config-type>
                 <config-type>elastic-sysconfig</config-type>
                 <config-type>elastic-systemd</config-type>
