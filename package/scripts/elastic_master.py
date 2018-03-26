@@ -19,8 +19,10 @@ limitations under the License.
 
 from resource_management.core import shell
 from resource_management.core.resources.system import Execute, File
+from resource_management.core.source import InlineTemplate
 from resource_management.libraries.script import Script
 from resource_management.core.logger import Logger
+
 from elastic_commands import service_check
 from elastic_commands import configure_master
 
