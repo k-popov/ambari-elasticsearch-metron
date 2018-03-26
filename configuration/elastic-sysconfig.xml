@@ -79,7 +79,9 @@ CONF_DIR={{conf_dir}}
 # User to run as, change this to a specific elasticsearch user if possible
 # Also make sure, this user can write into the log directories in case you change them
 # This setting only works for the init script, but has to be configured separately for systemd startup
-ES_USER={{elastic_user}}
+# WARN: This env variable is no longer supported
+# ES_USER and ES_GROUP settings are no longer supported. To run as a custom user/group use the archive distribution of Elasticsearch.
+# ES_USER={{elastic_user}}
 
 # Elasticsearch pid directory
 PID_DIR={{pid_dir}}
