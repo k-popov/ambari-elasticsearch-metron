@@ -117,11 +117,14 @@
         <value>5</value>
         <description>index.merge.scheduler.max_thread_count</description>
     </property>
+    <!-- the property has been removed: https://www.elastic.co/guide/en/elasticsearch/reference/current/breaking_60_settings_changes.html -->
+    <!--
     <property>
         <name>indices_memory_index_store_throttle_type</name>
         <value>none</value>
         <description>index_store_throttle_type</description>
     </property>
+    -->
     <property>
         <name>index_refresh_interval</name>
         <value>1s</value>
@@ -164,7 +167,7 @@
     </property>
     <property>
         <name>cluster_routing_allocation_disk_watermark_high</name>
-        <value>0.99</value>
+        <value>0.95</value>
         <description>Property used when multiple drives are used to understand max thresholds</description>
     </property>
     <property>

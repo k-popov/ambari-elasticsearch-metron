@@ -64,7 +64,8 @@ expected_data_nodes = config['configurations']['elastic-site']['expected_data_no
 index_merge_scheduler_max_thread_count = config['configurations']['elastic-site']['index_merge_scheduler_max_thread_count']
 index_translog_flush_threshold_size = config['configurations']['elastic-site']['index_translog_flush_threshold_size']
 index_refresh_interval = config['configurations']['elastic-site']['index_refresh_interval']
-indices_memory_index_store_throttle_type = config['configurations']['elastic-site']['indices_memory_index_store_throttle_type']
+# the below has beebn removed: https://www.elastic.co/guide/en/elasticsearch/reference/current/breaking_60_settings_changes.html
+#indices_memory_index_store_throttle_type = config['configurations']['elastic-site']['indices_memory_index_store_throttle_type']
 index_number_of_shards = config['configurations']['elastic-site']['index_number_of_shards']
 index_number_of_replicas = config['configurations']['elastic-site']['index_number_of_replicas']
 indices_memory_index_buffer_size = config['configurations']['elastic-site']['indices_memory_index_buffer_size']
