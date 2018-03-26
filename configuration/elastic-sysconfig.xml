@@ -91,6 +91,7 @@ JAVA_HOME={{java64_home}}
 
 # Additional Java options - now preferential to use 'jvm.options' file instead
 ES_JAVA_OPTS=""
+ES_JAVA_OPTS="$ES_JAVA_OPTS -Des.path.logs=$LOG_DIR "
 
 # https://www.elastic.co/guide/en/elasticsearch/reference/5.6/_memory_lock_check.html
 MAX_LOCKED_MEMORY=unlimited
