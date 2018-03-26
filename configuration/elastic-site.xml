@@ -192,7 +192,7 @@
     </property>
     <property>
         <name>network_publish_host</name>
-        <value>[]</value>
+        <value>[ _site_ ]</value>
         <value-attributes>
             <empty-value-valid>true</empty-value-valid>
         </value-attributes>
