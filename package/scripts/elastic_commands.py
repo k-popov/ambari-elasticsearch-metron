@@ -169,7 +169,7 @@ def create_elastic_config(params):
     """
     path = get_elastic_config_path()
     Logger.info("Creating the Elasticsearch system config; path={0}".format(path))
-    File(path, owner="root", group="root", content=InlineTemplate(params.sysconfig_template))
+    File(path, owner="root", group="root", mode=0755, content=InlineTemplate(params.sysconfig_template))
 
 def create_elastic_pam_limits(params):
     """
