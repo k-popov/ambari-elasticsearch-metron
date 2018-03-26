@@ -177,7 +177,7 @@
     </property>   
    <property>
         <name>cluster_routing_allocation_disk_watermark_low</name>
-        <value>.97</value>
+        <value>.93</value>
         <description>Property used when multiple drives are used to understand min thresholds</description>
     </property>
     <property>
