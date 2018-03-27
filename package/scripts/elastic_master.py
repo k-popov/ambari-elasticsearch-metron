@@ -32,11 +32,6 @@ class Elasticsearch(Script):
         import params
         env.set_params(params)
         Logger.info('Install Elasticsearch master node')
-        Execute('rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch')
-        File(params.elastic_yum_repo_file,
-             content=InlineTemplate(params.elastic_yum_repo),
-             owner="root",
-             group="root")
         self.install_packages(env)
 
     def configure(self, env, upgrade_type=None, config_dir=None):

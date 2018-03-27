@@ -1,0 +1,9 @@
+<reposinfo>
+  <os family="redhat7">
+    <repo>
+      <baseurl>https://artifacts.elastic.co/packages/6.x/yum</baseurl>
+      <repoid>elasticsearch-6.x</repoid>
+      <reponame>Elasticsearch repository for 6.x packages</reponame>
+    </repo>
+  </os>
+</reposinfo>
