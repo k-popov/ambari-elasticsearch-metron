@@ -66,12 +66,12 @@
     </property>
     <property>
         <name>http_port</name>
-        <value>9200-9300</value>
+        <value>9200</value>
         <description>Set a custom port to listen for HTTP traffic</description>
     </property>
     <property>
         <name>transport_tcp_port</name>
-        <value>9300-9400</value>
+        <value>9300</value>
         <description>Set a custom port for the node to node communication</description>
     </property>
     <!--  Multi-node Discovery -->
