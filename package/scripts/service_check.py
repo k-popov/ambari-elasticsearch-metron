@@ -51,7 +51,10 @@ class ServiceCheck(Script):
         :param index: The name of the test index.
         """
         # put a document into a new index
-        Execute("curl -XPUT 'http://%s:%s/%s/test/1' -d '%s'" % (host, port, index, doc), logoutput=True)
+        Execute(
+            "curl -XPOST -H 'Content-Type: application/json' 'http://%s:%s/%s/test/1' -d '%s'".format(
+                host, port, index, doc),
+            logoutput=True)
 
         # retrieve the document...  use subprocess because we actually need the results here.
         cmd_retrieve = "curl -XGET 'http://%s:%s/%s/test/1'" % (host, port, index)
